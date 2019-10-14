@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProyectoProgra.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoProgra"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Etiquetado de consolas" FontSize="20" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="75,55,0,0" TextWrapping="Wrap" Text="Consola" VerticalAlignment="Top"/>
+        <ComboBox Name="Consolas" HorizontalAlignment="Left" Margin="140,55,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Nintendo 64</ComboBoxItem>
+            <ComboBoxItem>Gamecube</ComboBoxItem>
+            <ComboBoxItem>Play Station</ComboBoxItem>
+            <ComboBoxItem>Wii</ComboBoxItem>
+            <ComboBoxItem>Xbox 360</ComboBoxItem>
+            <ComboBoxItem>Play Station 2</ComboBoxItem>
+        </ComboBox>
+        <Grid x:Name="Parametros" HorizontalAlignment="Left" Height="260" Margin="35,95,0,0" VerticalAlignment="Top" Width="720"/>
+        <Button x:Name="bnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="280,56,0,0" VerticalAlignment="Top" Width="75" Click="BnAgregar_Click"/>
+
+
+
+    </Grid>
+</Window>

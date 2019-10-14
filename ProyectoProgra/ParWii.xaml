@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="ProyectoProgra.ParWii"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoProgra"
+             mc:Ignorable="d" 
+             d:DesignHeight="260" d:DesignWidth="720" Background="White" x:Name="n64">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="90,10,0,0" TextWrapping="Wrap" Text="Nombre de Propietario:" VerticalAlignment="Top"/>
+        <TextBox x:Name="NombrePro" HorizontalAlignment="Left" Height="23" Margin="220,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="NombrePro_TextChanged" />
+        <TextBlock HorizontalAlignment="Left" Margin="90,38,0,0" TextWrapping="Wrap" Text="Antigüedad:" VerticalAlignment="Top"/>
+        <TextBox x:Name="Antigüedad" HorizontalAlignment="Left" Height="23" Margin="199,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Antigüedad_TextChanged" />
+        <TextBlock HorizontalAlignment="Left" Margin="350,38,0,0" TextWrapping="Wrap" Text="Valor:" VerticalAlignment="Top"/>
+        <TextBox x:Name="Valor" HorizontalAlignment="Left" Height="23" Margin="385,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Valor_TextChanged" />
+        <TextBlock HorizontalAlignment="Left" Margin="350,10,0,0" TextWrapping="Wrap" Text="Uso:" VerticalAlignment="Top"/>
+        <TextBox x:Name="Uso" HorizontalAlignment="Left" Height="23" Margin="385,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Uso_TextChanged" />
+        <TextBlock HorizontalAlignment="Left" Margin="511,10,0,0" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top"/>
+        <TextBox x:Name="Descuento" HorizontalAlignment="Left" Height="23" Margin="575,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Descuento_TextChanged"/>
+        <RadioButton Content="Bueno" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Regular" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Malo" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Estado:" VerticalAlignment="Top"/>
+        <ComboBox Name="CbMarcas" HorizontalAlignment="Left" Margin="385,93,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Nintendo</ComboBoxItem>
+            <ComboBoxItem>Sony</ComboBoxItem>
+            <ComboBoxItem>Microsoft</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="430,74,0,0" TextWrapping="Wrap" Text="Marca" VerticalAlignment="Top" RenderTransformOrigin="0.917,0.627"/>
+        <CheckBox Content="Hackeada" HorizontalAlignment="Left" Margin="90,81,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Señal" Visibility="Hidden" Content="Las cajas deben estar llenas" Foreground="Red" HorizontalAlignment="Left" Margin="90,155,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="555,231,0,0" VerticalAlignment="Top" Width="75" Click="BnGuardar_Click"/>
+        <Button x:Name="bnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="635,231,0,0" VerticalAlignment="Top" Width="75" Click="BnCancelar_Click"/>
+
+
+    </Grid>
+</UserControl>
